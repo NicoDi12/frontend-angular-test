@@ -1,0 +1,11 @@
+<div>
+  <label [for]="inputId" class="block text-sm font-medium text-gray-700">
+    {{ label }}
+  </label>
+
+  <input [id]="inputId" [type]="type" [formControl]="formControl" [placeholder]="placeholder"
+    class="mt-1 w-full rounded-xl border border-gray-300 px-5 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#048ED1] focus:border-[#048ED1] placeholder-gray-400 transition"
+    [ngClass]="{'border-red-500': formControl.invalid && formControl.touched}">
+
+   <app-form-control-error [control]="control"></app-form-control-error>
+</div>
