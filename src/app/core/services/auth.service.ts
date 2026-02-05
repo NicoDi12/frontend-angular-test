@@ -1,9 +1,9 @@
+import { User } from './../../shared/interfaces/user';
 import { inject, Injectable, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
-import { User } from '../../shared/interfaces/user';
 import { Observable, tap } from 'rxjs';
-import { environment } from '../../../environments/environment.development';
+// import { environment } from '../../../environments/environment.development'; -> coloca el path de tus variables de entorno
 
 @Injectable({
   providedIn: 'root'

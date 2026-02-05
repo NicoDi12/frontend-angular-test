@@ -1,7 +1,7 @@
+import { User } from './../../shared/interfaces/user';
 import { SwalService } from '../services/swal.service';
 import { AuthService } from '../services/auth.service';
 // import { environment } from './../../../environments/environment.development'; -> agrega aqui el path de tus variables de entorno
-import { User } from '../../shared/interfaces/user';
 import { HttpInterceptorFn, HttpHandlerFn, HttpRequest, HttpEvent, HttpErrorResponse, HttpClient } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, switchMap } from 'rxjs/operators';
